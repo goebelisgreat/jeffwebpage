@@ -1,0 +1,325 @@
+/* =========================
+   GLOBAL / SITE-WIDE STYLES
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #0f172a;
+    color: #e5e7eb;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 30px auto;
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================
+   HEADERS / TEXT
+========================= */
+
+h1 {
+    text-align: center;
+    margin: 20px 0 10px;
+    color: #f97316;
+    font-size: 2.2rem;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #cbd5e1;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+h3 {
+    color: #f97316;
+    border-bottom: 4px solid #14b8a6;
+    padding-bottom: 6px;
+    font-size: 1.4rem;
+    margin-top: 0;
+}
+
+p {
+    margin-top: 0;
+}
+
+.section {
+    margin-top: 40px;
+}
+
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #dbe4ee;
+}
+
+/* =========================
+   HERO / MAIN PHOTO
+========================= */
+
+.header {
+    text-align: center;
+}
+
+.hero-photo {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 12px;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    color: #93c5fd;
+}
+
+a:hover {
+    color: #f97316;
+}
+
+/* =========================
+   JEFF CAREER STATS
+========================= */
+
+.stats-box {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 1px solid #334155;
+    padding: 10px 0;
+}
+
+.stat:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    font-weight: bold;
+    color: #eab308;
+}
+
+.stat-value {
+    text-align: right;
+    color: #e5e7eb;
+}
+
+/* =========================
+   LISTS
+========================= */
+
+ul {
+    padding-left: 22px;
+    margin-bottom: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li b {
+    color: #eab308;
+}
+
+/* =========================
+   MOTTO / CLOSER
+========================= */
+
+.motto,
+.closer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.motto {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #f8fafc;
+}
+
+.closer p {
+    margin-bottom: 12px;
+}
+
+/* =========================
+   BOTTOM NAVIGATION
+========================= */
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.nav-button {
+    display: inline-block;
+    background-color: #22c55e;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #16a34a;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Optional alternate button color */
+.nav-button.alt {
+    background-color: #0ea5e9;
+}
+
+.nav-button.alt:hover {
+    background-color: #0284c7;
+}
+
+/* =========================
+   GALLERY PAGE
+========================= */
+
+.gallery-section {
+    margin-top: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery-item {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-caption {
+    padding: 12px;
+    font-size: 0.95rem;
+    color: #dbe4ee;
+    text-align: center;
+}
+
+/* =========================
+   MEDIA GRID
+========================= */
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.media-item {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    padding: 10px 14px;
+    text-align: center;
+    font-weight: bold;
+    color: #eab308;
+}
+
+/* =========================
+   PAGE 2 / EXTENDED CONTENT
+========================= */
+
+.info-box {
+    background: #0f172a;
+    border-left: 4px solid #14b8a6;
+    padding: 18px;
+    border-radius: 8px;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 16px 20px;
+}
+
+/* =========================
+   RESPONSIVE TWEAKS
+========================= */
+
+@media (max-width: 768px) {
+    .container {
+        width: 94%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.05rem;
+    }
+
+    .stat {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .stat-value {
+        text-align: left;
+    }
+
+    .gallery-item img {
+        height: 200px;
+    }
+}
